@@ -6,12 +6,13 @@ def parse(data)
   data.strip.split(',').map(&:to_i)
 end
 
-# PART 1
-
 input = parse(file "input.txt")
 
 max = input.max
 min = input.min
+
+# PART 1
+
 fuel_log = {}
 
 (min..max).to_a.each do |position|
