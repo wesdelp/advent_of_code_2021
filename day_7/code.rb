@@ -6,6 +6,8 @@ def parse(data)
   data.strip.split(',').map(&:to_i)
 end
 
+# PART 1
+
 input = parse(file "input.txt")
 
 max = input.max
@@ -33,5 +35,7 @@ fuel_log = {}
   end
   fuel_log[position] = total_fuel.to_i
 end
+
+# PART 2
 
 p fuel_log.sort_by {|_key, value| value}.first.last
