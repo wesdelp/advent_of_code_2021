@@ -24,6 +24,8 @@ end
 
 p fuel_log.sort_by {|_key, value| value}.first.last
 
+# PART 2
+
 fuel_log = {}
 
 (min..max).to_a.each do |position|
@@ -35,7 +37,5 @@ fuel_log = {}
   end
   fuel_log[position] = total_fuel.to_i
 end
-
-# PART 2
 
 p fuel_log.sort_by {|_key, value| value}.first.last
